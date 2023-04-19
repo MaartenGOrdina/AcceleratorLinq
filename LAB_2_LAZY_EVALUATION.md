@@ -23,6 +23,9 @@
 2. Run the console app
 3. Count the executed queries in the console
 
+## Part 4 (Extra)
+- Add an Extension method to `IQueryable` called `.SkipRandom` that skips a random amount of records using `.Skip` _(hint 7)_
+
 
 ##### Hints
 ###### Hint #1
@@ -98,5 +101,16 @@ foreach (var business in businesses)
 foreach (var business in businesses)
 {
     Console.WriteLine(business.Name); 
+}
+```
+
+###### Hint #7
+```csharp
+public static class MyQueryableExtensions
+{
+    public static IQueryable<T> SkipRandom<T>(this IQueryable<T> queryable)
+    {
+        // return queryable with Skip applied..
+    }
 }
 ```

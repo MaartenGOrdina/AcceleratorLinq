@@ -23,8 +23,11 @@
 4. Run the Console app
 
 ## Part 4 (Extension)
-1. Filter your enumerable results using `.where` to only numbers that less then 10.
+1. Filter your enumerable results using `.Where` to only numbers that less then 10.
 2. Run the Console app
+
+## Part 5 (Extra)
+- Use the `yield` keyword to generate values in your enumerator
 
 ##### Hints
 ###### Hint #1
