@@ -28,7 +28,7 @@
 
 ##### Hints
 ###### Hint #1
-```
+```csharp
 public class FibonacciEnumerable : IEnumerable<int>
 {
     public IEnumerator<int> GetEnumerator()
@@ -44,7 +44,7 @@ public class FibonacciEnumerable : IEnumerable<int>
 ```
 
 ###### Hint #2
-```
+```csharp
 public class FibonacciEnumerableEnumerator : IEnumerator<int>
 {
     public bool MoveNext()

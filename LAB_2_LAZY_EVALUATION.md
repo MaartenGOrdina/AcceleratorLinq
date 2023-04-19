@@ -26,7 +26,7 @@
 
 ##### Hints
 ###### Hint #1
-```
+```csharp
 using AcceleratorLinq.Data;
 
 using var context = new BusinessesContext();
@@ -35,7 +35,7 @@ Console.WriteLine($"Using database file: {context.DbPath}");
 ```
 
 ###### Hint #2
-```
+```csharp
 context.Businesses.Add(new Business()
 {
     Name = "Orange Company",
@@ -52,7 +52,7 @@ context.SaveChanges();
 ```
 
 ###### Hint #3
-```
+```csharp
 var businesses = context.Businesses;
 
 foreach (var business in businesses)
@@ -62,7 +62,7 @@ foreach (var business in businesses)
 ```
 
 ###### Hint #4
-```
+```csharp
 var businesses = context.Businesses.Where(b => b.Name.Contains("Orange"));
 
 foreach (var business in businesses)
@@ -72,7 +72,7 @@ foreach (var business in businesses)
 ```
 
 ###### Hint #5
-```
+```csharp
 var businesses = context.Businesses.Where(b => b.Name.Contains("Orange"));
 
 foreach (var business in businesses)
@@ -87,7 +87,7 @@ foreach (var business in businesses)
 ```
 
 ###### Hint #6
-```
+```csharp
 var businesses = context.Businesses.Where(b => b.Name.Contains("Orange")).ToList();
 
 foreach (var business in businesses)
